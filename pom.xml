@@ -37,6 +37,19 @@
         <url>https://github.com/trinodb/trino-hive-jdbc</url>
     </scm>
 
+    <distributionManagement>
+        <repository>
+            <id>nexus-releases</id>
+            <name>Releases</name>
+            <url>https://repo1.acceldata.dev/repository/odp-release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus-snapshots</id>
+            <name>Snapshot</name>
+            <url>https://repo1.acceldata.dev/repository/odp-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetJdk>21</project.build.targetJdk>
@@ -461,19 +474,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <distributionManagement>
-        <repository>
-          <id>nexus-releases</id>
-          <name>Releases</name>
-          <url>https://repo1.acceldata.dev/repository/odp-release/</url>
-        </repository>
-   	<snapshotRepository>
-     	  <id>nexus-snapshots</id>
-     	  <name>Snapshot</name>
-     	  <url>https://repo1.acceldata.dev/repository/odp-snapshot/</url>
-   	</snapshotRepository>
-    </distributionManagement>
 
     <build>
         <plugins>
