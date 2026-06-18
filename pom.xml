@@ -59,6 +59,8 @@
         <dep.hive.version>3.1.4.3.2.3.7-2</dep.hive.version>
         <dep.thrift.version>0.14.1</dep.thrift.version>
         <dep.guava.version>11.0.2</dep.guava.version>
+        <jackson2.version>2.18.6</jackson2.version>
+        <jackson2.databind.version>2.18.6</jackson2.databind.version>
         <air.check.skip-spotbugs>true</air.check.skip-spotbugs>
         <air.check.skip-pmd>true</air.check.skip-pmd>
         <air.check.skip-jacoco>true</air.check.skip-jacoco>
@@ -68,6 +70,22 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>${jackson2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>${jackson2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson2.databind.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>com.google.guava</groupId>
