@@ -57,7 +57,7 @@
         <shadeBase>io.trino.hive.jdbc.\$internal</shadeBase>
         <dep.slf4j.version>1.7.5</dep.slf4j.version>
         <dep.hadoop.version>3.3.6.${odp.release.version}</dep.hadoop.version>
-        <dep.hive.version>4.0.1.${odp.release.version}</dep.hive.version>
+        <dep.hive.version>4.1.-0.${odp.release.version}</dep.hive.version>
         <dep.thrift.version>0.12.0</dep.thrift.version>
         <dep.guava.version>11.0.2</dep.guava.version>
         <air.check.skip-spotbugs>true</air.check.skip-spotbugs>
@@ -120,12 +120,20 @@
                     <artifactId>log4j</artifactId>
                 </exclusion>
                 <exclusion>
+                    <groupId>net.bytebuddy</groupId>
+                    <artifactId>byte-buddy</artifactId>
+                </exclusion>
+                <exclusion>
                     <groupId>org.apache.commons</groupId>
                     <artifactId>commons-compress</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>org.apache.tez</groupId>
                     <artifactId>tez-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.zookeeper</groupId>
+                    <artifactId>zookeeper</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
@@ -382,6 +390,18 @@
                 <exclusion>
                     <groupId>org.apache.httpcomponents</groupId>
                     <artifactId>httpcore</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>${dep.zookeeper.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
