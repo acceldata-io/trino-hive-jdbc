@@ -57,7 +57,7 @@
         <shadeBase>io.trino.hive.jdbc.\$internal</shadeBase>
         <dep.slf4j.version>1.7.5</dep.slf4j.version>
         <dep.hadoop.version>3.3.6.${odp.release.version}</dep.hadoop.version>
-        <dep.hive.version>4.1.-0.${odp.release.version}</dep.hive.version>
+        <dep.hive.version>4.1.0.${odp.release.version}</dep.hive.version>
         <dep.thrift.version>0.12.0</dep.thrift.version>
         <dep.guava.version>11.0.2</dep.guava.version>
         <air.check.skip-spotbugs>true</air.check.skip-spotbugs>
