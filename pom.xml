@@ -10,7 +10,7 @@
 
     <groupId>io.trino.hive</groupId>
     <artifactId>hive-apache-jdbc</artifactId>
-    <version>0.13.1-10-3.4.3.0-1</version>
+    <version>0.13.1-10-3.4.3.0-SNAPSHOT</version>
 
     <name>hive-apache-jdbc</name>
     <description>Shaded version of Apache Hive JDBC driver for Trino</description>
@@ -51,7 +51,7 @@
     </distributionManagement>
 
     <properties>
-        <odp.release.version>3.4.3.0-1</odp.release.version>
+        <odp.release.version>3.4.3.0-SNAPSHOT</odp.release.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.targetJdk>21</project.build.targetJdk>
         <shadeBase>io.trino.hive.jdbc.\$internal</shadeBase>
